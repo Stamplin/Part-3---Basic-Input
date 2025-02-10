@@ -56,6 +56,48 @@ namespace Part_3___Basic_Input
 
             //part 3 - distance calculator (take 3 distance in km and as double and print average)
 
+            double km1, km2, km3, average;
+
+            Console.WriteLine("I will average three distances for you. (it can be decimals too)");
+
+            Console.WriteLine("Enter a number");
+            km1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter a second number");
+            km2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter a third number");
+            km3 = Convert.ToDouble(Console.ReadLine());
+
+            //round the average to 2 decimals
+            average = Math.Round((km1 + km2 + km3) / 3, 2);
+            Console.WriteLine("The average is " + average);
+
+            //clear console
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+            Console.Clear();
+
+            //part 4  - Hypotenuse calculator
+            
+
+            double side1, side2, hypotenuse;
+
+            Console.WriteLine("I will calculate the hypotenuse for you. (it can be decimals too)");
+
+            Console.WriteLine("Enter a side");
+            side1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter a second side");
+            side2 = Convert.ToDouble(Console.ReadLine());
+            
+            //use math class for squareroot
+            hypotenuse = Math.Sqrt((side1 * side1) + (side2 * side2));
+            Console.WriteLine("The hypotenuse is " + hypotenuse);
+
+            //exit program
+            Console.WriteLine("Press enter to exit");
+            Console.ReadLine();
 
 
 
